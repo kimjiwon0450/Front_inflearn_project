@@ -293,6 +293,19 @@ const OrderPage = () => {
     }
   };
 
+  const allSelected = selectedProducts.length === productsInCart.length && productsInCart.length > 0;
+
+  const toggleSelectAll = () => {
+    if (allSelected) {
+      setSelectedProducts([]);
+      localStorage.setItem('selectedProductIds', JSON.stringify([]));
+    } else {
+      const allIds = productsInCart.map((p) => p.id);
+      setSelectedProducts(allIds);
+      localStorage.setItem('selectedProductIds', JSON.stringify(allIds));
+    }
+  };
+
   return (
     <Container className={styles.orderPage}>
       <Grid container spacing={2}>
@@ -308,7 +321,27 @@ const OrderPage = () => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>선택</TableCell>
+                  <TableCell padding="checkbox"
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      gap: 1,
+                      whiteSpace: 'nowrap',
+                      minWidth: '150px'
+                    }}>
+                    <Checkbox
+                      checked={allSelected}
+                      indeterminate={
+                        selectedProducts.length > 0 &&
+                        selectedProducts.length < productsInCart.length
+                      }
+                      onChange={toggleSelectAll}
+                    />
+                    <Typography variant="body1">전체선택</Typography>
+
+                  </TableCell>
+                  <TableCell> </TableCell>
                   <TableCell> </TableCell>
 
                   <TableCell></TableCell>
