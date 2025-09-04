@@ -16,12 +16,12 @@ if (clientHostName === 'localhost') {
   backendHostName = 'http://localhost:8000';
 }
 // 배포를 했다는 가정하에
-else if (clientHostName === 'playdatashop.com') {
+else if (clientHostName === 'infolearnplaydata123456.shop') {
   // 배포해서 현재 서비스 중
-  backendHostName = 'https://api.playdatashop.com';
+  backendHostName = 'https://api.infolearnplaydata123456.shop';
 }
 
-//'http://ec2-3-38-145-197.ap-northeast-2.compute.amazonaws.com:8000';
+//'http://ec2-3-38-145-197.ap-northeast-2.compute.amazonaws.com:8000asdasd';
 export const API_BASE_URL = backendHostName;
 export const USER = '/user-service/user';
 export const COURSE = '/course-service/courses';
