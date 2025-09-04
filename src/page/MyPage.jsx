@@ -193,7 +193,7 @@ const MyPage = () => {
           </Card>
         </Grid>
       </Grid>
-      <MyTabBar userRole={role} />
+      <MyTabBar userRole={role} userId={userInfo.userId} />
     </>
   );
 };
