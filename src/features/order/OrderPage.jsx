@@ -244,6 +244,8 @@ const OrderPage = () => {
         orderProducts,
       );
 
+      console.log(response);
+
       console.log('이거는 response.data', response.data);
 
       // if (!response.ok) {
@@ -293,7 +295,9 @@ const OrderPage = () => {
     }
   };
 
-  const allSelected = selectedProducts.length === productsInCart.length && productsInCart.length > 0;
+  const allSelected =
+    selectedProducts.length === productsInCart.length &&
+    productsInCart.length > 0;
 
   const toggleSelectAll = () => {
     if (allSelected) {
@@ -321,15 +325,17 @@ const OrderPage = () => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell padding="checkbox"
+                  <TableCell
+                    padding='checkbox'
                     sx={{
                       display: 'flex',
                       flexDirection: 'row',
                       alignItems: 'center',
                       gap: 1,
                       whiteSpace: 'nowrap',
-                      minWidth: '150px'
-                    }}>
+                      minWidth: '150px',
+                    }}
+                  >
                     <Checkbox
                       checked={allSelected}
                       indeterminate={
@@ -338,8 +344,7 @@ const OrderPage = () => {
                       }
                       onChange={toggleSelectAll}
                     />
-                    <Typography variant="body1">전체선택</Typography>
-
+                    <Typography variant='body1'>전체선택</Typography>
                   </TableCell>
                   <TableCell> </TableCell>
                   <TableCell> </TableCell>
