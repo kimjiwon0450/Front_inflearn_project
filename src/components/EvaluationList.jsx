@@ -42,7 +42,11 @@ const EvaluationList = ({ courseId, onEvaluationChange }) => {
         setError('평가 정보를 불러오는 데 실패했습니다.');
       }
     } catch (err) {
-      setError('서버 요청 중 오류가 발생했습니다.');
+      if (err.status === 400) {
+        setMyEval(null);
+      } else {
+        setError('서버 요청 중 오류가 발생했습니다.');
+      }
       console.error(err);
     } finally {
       setLoading(false);
@@ -71,7 +75,11 @@ const EvaluationList = ({ courseId, onEvaluationChange }) => {
         setError('나의 평가 정보를 불러오는 데 실패했습니다.');
       }
     } catch (err) {
-      setError('서버 요청 중 오류가 발생했습니다.');
+      if (err.status === 400) {
+        setMyEval(null);
+      } else {
+        setError('서버 요청 중 오류가 발생했습니다.');
+      }
       console.error(err);
     } finally {
       setLoading(false);
