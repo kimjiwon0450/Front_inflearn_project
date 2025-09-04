@@ -41,6 +41,7 @@ const ResetPassword = () => {
         { params: { email: email } },
       );
       setMessages({ success: '인증 코드가 이메일로 전송되었습니다.' });
+      console.log(response);
       setStep(2);
     } catch (error) {
       setMessages({
