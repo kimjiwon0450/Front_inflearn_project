@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080'; // 실제 주소로 변경하세요
+const API_BASE_URL = 'https://api.infolearnplaydata123456.shop'; // 실제 주소로 변경하세요
 
 export const fetchUserInfo = async (email) => {
   const token = localStorage.getItem('token');
