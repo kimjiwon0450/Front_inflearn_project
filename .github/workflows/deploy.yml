@@ -29,6 +29,11 @@ jobs:
         # 프로젝트 빌드 단계
         # CI=false -> CI 환경에서는 경고가 오류로 취급되서 빌드 실패 가능성 up
         # 경고를 오류로 처리하지 마라!
+
+      # ✅ .env 파일을 최상단에 생성
+      - name: Create .env file from secret
+        run: echo "${{ secrets.ENV_USER_FILE }}" > .env
+
       - name: Build React App
         run: CI=false npm run build
 
