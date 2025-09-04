@@ -74,7 +74,7 @@ axiosInstance.interceptors.response.use(
         const id = localStorage.getItem('USER_ID');
 
         const res = await axios.post(
-          'http://localhost:8000/user-service/user/refresh',
+          'https://api.infolearnplaydata123456.shop/user-service/user/refresh',
           {
             id,
           },
