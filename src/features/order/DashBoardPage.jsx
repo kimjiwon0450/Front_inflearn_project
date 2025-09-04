@@ -41,6 +41,7 @@ const DashBoardPage = ({ id }) => {
             { userId: id },
           );
         }
+        console.log(res);
         setOrderList(res.data.result);
       } catch (e) {
         console.log('orderlistComponent 에러 발생 ', e);
