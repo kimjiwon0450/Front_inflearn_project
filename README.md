@@ -8,7 +8,7 @@
 
 - 📅 개발 기간: 2025.05.09 ~ 2025.05.15  
 - 🏗️ 주요 역할: 강의서비스 구현(백엔드 + 프론트)
-- 🪄 GitHub Backend: [Backend Repository](https://github.com/kimjiwon0450/Back_inflearn_project)  
+- GitHub Backend: [Backend Repository](https://github.com/kimjiwon0450/Back_inflearn_project)  
 
 
 ## ✨ 주요 기능 요약
@@ -27,8 +27,9 @@
 - 유효성 검사 및 로그인 유지 기능 포함
 
 ![Student_Login](./images/student_login.png)
+![Student_Mypage](./images/student_login2.png)
 
----
+
 
 ### 📚 2️⃣ 강의 조회 및 강의 담기
 - 전체 강의 리스트 조회  
@@ -37,20 +38,22 @@
 ![Student_CourseList](./images/student_course_list.png)
 ![Student_AddToCart](./images/student_add_cart.png)
 
----
+
 
 ### 💳 3️⃣ 강의 결제
 - 장바구니에서 결제 진행 및 결제 내역 확인 가능
 
 ![Student_Payment](./images/student_payment.png)
+![Student_Payment_History](./images/student_payment2.png)
 
----
+
 
 ### 💬 4️⃣ 댓글 작성
 - 수강 완료 후 강의 댓글 작성  
 - 댓글 수정/삭제 기능 제공
 
 ![Student_Comment](./images/student_comment.png)
+![Student_Comment](./images/student_comment2.png)
 
 ---
 
@@ -60,8 +63,9 @@
 - 강사 전용 로그인 및 권한 관리
 
 ![Instructor_Login](./images/instructor_login.png)
+![Instructor_Mypage](./images/instructor_login2.png)
 
----
+
 
 ### 🧑‍🏫 2️⃣ 강의 등록 / 수정 / 삭제
 - 신규 강의 등록, 기존 강의 수정/삭제 기능 제공
@@ -69,12 +73,13 @@
 ![Instructor_CourseCreate](./images/instructor_course_create.png)
 ![Instructor_CourseEdit](./images/instructor_course_edit.png)
 
----
+
 
 ### 💬 3️⃣ 댓글 답변 작성
 - 수강생 댓글에 대한 답변 작성 및 관리
 
 ![Instructor_Reply](./images/instructor_reply.png)
+![Instructor_Reply](./images/instructor_reply2.png)
 
 ---
 
