@@ -3,7 +3,6 @@
 > 📌 **Inflearn**은 온라인 강의 등록부터 결제, 댓글 소통까지 가능한 **학습 관리 플랫폼**입니다.  
 > 본 레포지토리는 해당 서비스의 **프론트엔드 코드**를 포함하고 있으며, React(JSX)와 SCSS 기반으로 제작되었습니다.
 
----
 
 ## 🧭 프로젝트 개요
 
@@ -11,7 +10,6 @@
 - 🏗️ 주요 역할: 강의서비스 구현(백엔드 + 프론트)
 - 🪄 GitHub Backend: [Backend Repository](https://github.com/kimjiwon0450/Back_inflearn_project)  
 
----
 
 ## ✨ 주요 기능 요약
 
